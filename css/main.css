@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Karla', sans-serif;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #898989;
+}
+
+/***** Menu *****/
+
+.menu-toggle p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-toggle span {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  z-index: 1;
+}
+
+
+/* nav {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+} */
+
+.menu-toggle {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  /* width: 100%; */
+  top: 50px;
+  left: 50%;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.menu-toggle input {
+  display: block;
+  width: 60px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+.menu-toggle input:checked ~ p {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  width: 100%;
+  margin-top: 10px;
+  padding: 0;
+
+  background: white;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+
+  transform-origin: 0% 0%;
+  transform: translateY(-200%);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.menu li {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 18px;
+}
+
+.menu-toggle input:checked ~ ul {
+  transform: none;
+}
+/*****************************************************************************
+Home page
+*************************************************************************/
+
+.intro {
+  width: 100%;
+}
