@@ -247,15 +247,117 @@ figcaption {
   font-size: 1.6em;
 }
 
+.story-intro {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto 40px auto;
+}
+
 .story {
   display: flex;
   justify-content: center;
   flex-flow: wrap; 
-  width: 100%;
+  width: 90%;
+  margin: auto;
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
 }
 
 .story p {
+  display: flex;
+  justify-content: center; 
   text-align: center;
   line-height: 1.6em;
-  width: 83%;
+  width: 100%;
+  padding: 20px;
+  margin: auto;
+  
+}
+
+/********************************************************************************
+Wedding Day
+*****************************************************************************/
+
+.wedding-day-info {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  width: 100%;
+}
+
+.wedding-day h3 {
+  font-family: 'balboa-plus-fill', sans-serif;
+  font-size: 2em;
+  letter-spacing: .065em;
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  margin: auto;
+  padding-bottom: 10px;
+  border-bottom: 1px #000000 solid;
+}
+
+.wedding-day-info p {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  width: 80%;
+  margin: 5px auto;
+}
+
+.date-time {
+  margin-top: 40px;
+}
+
+.tram-info {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  text-align: center;
+  line-height: 1.3em;
+  margin: 50px auto;
+  border: #000000 solid;
+}
+
+.tram-info p {
+  margin: 10px;
+}
+
+.tram-info span {
+  font-weight: bold;
+}
+
+.location h4 {
+  font-family: 'balboa-plus-fill', sans-serif;
+  font-size: 1.4em;
+  text-align: center;
+  margin: 15px auto;
+}
+
+.location p {
+ font-size: 1.2em;
+ width: 100%;
+}
+
+iframe {
+  width: 100%;
+  margin: 40px 0;
+}
+
+.wedding-day-info ul {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  list-style-type: none;
+  text-align: center;
+  width: 80%;
+  margin: 20px auto;
+  padding: 0;
+}
+
+.wedding-day-info ul li {
+  margin: 10px auto;
+  line-height: 1.6em;
 }
