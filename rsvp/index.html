@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Karla + Drew</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/gjq1wop.css">
   </head>
@@ -19,14 +20,14 @@
           <span></span>
         </div>
         <ul class="menu">
-          <a href="#"><li>Our Story</li></a>
-          <a href="#"><li>Wedding</li></a>
-          <a href="#"><li>Registry</li></a>
+          <a href="../index.html"><li>Our Story</li></a>
+          <a href="../wedding/index.html"><li>Wedding</li></a>
+          <a href="../registry/index.html"><li>Registry</li></a>
           <a href="#"><li>RSVP</li></a>
         </ul>
       </div>
     </nav>
-    <section class="page-title">
+    <section class="page-title rsvp-title">
       <h1>RSVP</h1>
     </section>
     <section class="rsvp-info">
@@ -35,28 +36,28 @@
     </section>
     <form class="rsvp-form" action="index.html" method="post">
       <p>Required fields <abbr title="required">*</abbr></p>
-      <div>
+      <div class="email-field">
         <label for="email">Email: <abbr title="required" aria-label="required">*</abbr></label>
         <input type="email" name="user_mail" id="email">
       </div>
-      <div>
+      <div class="name-field">
         <label for="name">Name: <abbr title="required" aria-label="required">*</abbr></label>
         <input type="text" id="name" name="user_name">
       </div>
       <p>Will you be attending?<abbr title="required" aria-label="required">*</abbr></p>
-      <div>
+      <div class="attending-yes">
         <input type="radio" id="yes" name="attending">
         <label for="yes">Yes!</label>
       </div>
-      <div>
+      <div class="attending-no">
         <input type="radio" id="no" name="attending">
         <label for="no">No :(</label>
       </div>
-      <div class="">
+      <div class="plus-one">
         <label for="attendants">Who else will be coming with you? <abbr title="required" aria-label="required">*</abbr></label>
         <input type="text" id="attendants" name="plus-one">
       </div>
-      <div class="">
+      <div class="songs">
         <label for="songs">Any song suggestions?</label>
         <input type="text" id="songs" name="song-ideas" value="">
       </div>
