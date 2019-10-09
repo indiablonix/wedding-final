@@ -262,7 +262,7 @@ figcaption {
   flex-flow: wrap; 
   width: 90%;
   margin: auto;
-  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);
+  /* box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4); */
 }
 
 .story p {
@@ -360,4 +360,42 @@ iframe {
 .wedding-day-info ul li {
   margin: 10px auto;
   line-height: 1.6em;
+}
+
+/*******************************************************************************
+Registry
+*******************************************************************************/
+
+.registry-title {
+  /* margin: 0; */
+}
+
+.registry-title h1 {
+  margin: 0;
+}
+
+.registry-info {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 50px;
+}
+
+.honeyfund-link {
+  font-family: 'balboa-plus-fill', sans-serif;
+  font-size: 1.6em;
+  border: solid black 2px;
+  width: 200px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+.honeyfund-link p {
+  display: flex;
+  margin: auto;
 }
