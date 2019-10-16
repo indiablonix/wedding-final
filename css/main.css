@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: auto;
   padding: 0;
   font-family: 'Karla', sans-serif;
   font-size: 16px;
@@ -198,7 +198,7 @@ Home page
   font-size: 4.8em;
   text-align: center;
   width: 70%;
-  height: 67vh;
+  height: 70vh;
   margin: auto;
   padding: 20px;
   border: solid 5px;
@@ -500,7 +500,7 @@ abbr {
 ipad screen media queries
 ******************************************************************************/
 
-/*****Homepage*********/
+/***** Homepage *********/
 
 @media screen and (min-width: 700px) {
 
@@ -544,6 +544,10 @@ ipad screen media queries
     flex: 0;
   }
 
+  .story-intro {
+    margin-top: 30px;
+  }
+
   /*********************************************
   Wedding day
   *********************************************/
@@ -565,8 +569,8 @@ ipad screen media queries
   *********************************************/
 
   .registry-info {
-    margin: 60px auto 270px auto;
-    width: 70%;
+    margin: 60px auto 245px auto;
+    width: 60%;
   }
 
   .honeyfund-link {
@@ -589,4 +593,73 @@ form {
 .form-button {
   margin-left: 5%;
 }
+
+}
+
+/*******************************************************************************
+Screen width: 800px
+*****************************************************************************/
+
+@media screen and (min-width: 800px) {
+  .story {
+    width: 60%;
+    text-align: justify;
+  }
+}
+
+/*******************************************************************************
+Fullscreen
+*******************************************************************************/
+
+@media screen and (min-width: 1200px) {
+
+  /************************************************
+  Home screen
+  ************************************************/
+
+  img {
+    display: flex;
+    margin: auto;
+    height: 100vh;
+  }
+
+  /************************************************
+  Wedding day
+  ************************************************/
+
+  .tram-info {
+    width: 40%;
+  }
+
+  iframe {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    margin: 80px auto;
+  }
+
+  /************************************************
+  Registry
+  ***********************************************/
+
+  .registry-info {
+    width: 50%;
+  }
+
+  /************************************************
+  RSVP
+  ***********************************************/
+
+  form {
+    margin-left: 32%;
+  }
+
+  form input {
+    width: 50%;
+  }
+
+  .form-button {
+    margin-left: 10%;
+    width: 30%;
+  }
 }
