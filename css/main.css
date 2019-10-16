@@ -289,7 +289,7 @@ Wedding Day
 
 .wedding-day h3 {
   font-family: 'balboa-plus-fill', sans-serif;
-  font-size: 2em;
+  font-size: 1.8em;
   letter-spacing: .065em;
   display: flex;
   justify-content: center;
@@ -322,7 +322,7 @@ Wedding Day
 }
 
 .tram-info p {
-  margin: 10px;
+  margin: 20px;
 }
 
 .tram-info span {
@@ -366,10 +366,6 @@ iframe {
 Registry
 *******************************************************************************/
 
-.registry-title {
-  /* margin: 0; */
-}
-
 .registry-title h1 {
   margin: 0;
 }
@@ -407,9 +403,6 @@ RSVP
   margin: 10px auto;
 }
 
-.rsvp-title h1 {
-  /* margin: 0; */
-}
 
 .rsvp-info {
   display: flex;
@@ -417,7 +410,6 @@ RSVP
   flex-flow: column wrap;
   width: 80%;
   margin: 0 auto;
-  /* padding-bottom: 60px; */
 }
 
 .rsvp-info h3 {
@@ -425,14 +417,12 @@ RSVP
   font-size: 1.2em;
   text-align: center;
   margin: 0;
-  /* padding-bottom: 20px; */
 }
 
 .rsvp-info p {
   display: flex;
   justify-content: center;
   margin: 5px auto;
-  /* padding-bottom: 10px; */
 }
 
 form {
@@ -441,7 +431,6 @@ form {
   flex-flow: column wrap;
   width: 70%;
   margin: auto;
-  /* padding-bottom: 50px; */
 }
 
 form input {
@@ -455,9 +444,6 @@ form input {
   align-items: flex-start;
 }
 
-form p:first-of-type {
-  /* margin: 0 auto 60px auto; */
-}
 
 form div {
   display: flex;
@@ -474,7 +460,6 @@ form div label {
 .attending-yes, 
 .attending-no {
   display: flex;
-  /* justify-content: center; */
   width: 100%;
   height: 40px;
 }
@@ -509,4 +494,99 @@ form div label {
 }
 abbr {
   color: red;
+}
+
+/*******************************************************************************
+ipad screen media queries
+******************************************************************************/
+
+/*****Homepage*********/
+
+@media screen and (min-width: 700px) {
+
+  .page-title {
+    margin: 100px auto 20px;
+  }
+
+  .title p {
+    width: 70%;
+    font-size: 1.5em;
+  }
+
+  .menu-toggle p,
+  .menu-toggle input {
+    /* height: 10px; */
+    margin: 0;
+    opacity: 0;
+  }
+
+  .menu {
+  transform: none;
+  transition: none;
+  margin: 20px auto;
+  flex-flow: row wrap;
+  align-content: space-around;
+  width: 100%;
+  }
+
+  .menu ul li,
+  .menu a {
+    display: flex;
+    width: 20%;
+    align-content: space-around;
+  }
+
+  .cross {
+    top: -300px;
+  }
+  
+  section {
+    flex: 0;
+  }
+
+  /*********************************************
+  Wedding day
+  *********************************************/
+
+  .wedding-day {
+    margin-top: 60px;
+  }
+
+  .tram-info {
+    width: 60%;
+  }
+
+  .wedding-day-info ul {
+    font-size: 1.5em;
+  }
+
+  /*********************************************
+  Registry
+  *********************************************/
+
+  .registry-info {
+    margin: 60px auto 270px auto;
+    width: 70%;
+  }
+
+  .honeyfund-link {
+    margin-top: 60px;
+  }
+
+  /********************************************
+  RSVP
+  *******************************************/
+
+form input {
+  margin: 0;
+  width: 60%;
+}
+
+form {
+  margin: auto 30%;
+}
+
+.form-button {
+  margin-left: 5%;
+}
 }
